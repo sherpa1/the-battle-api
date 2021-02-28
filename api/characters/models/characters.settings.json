@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "characters",
+  "info": {
+    "name": "characters",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "uuid": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 3,
+      "default": "000"
+    },
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "required": true,
+      "default": "character-000.png"
+    },
+    "strength": {
+      "type": "integer",
+      "max": 5,
+      "min": 0,
+      "default": 0
+    },
+    "speed": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "cleverness": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "intelligence": {
+      "type": "integer",
+      "max": 5,
+      "min": 0,
+      "default": 0
+    }
+  }
+}
